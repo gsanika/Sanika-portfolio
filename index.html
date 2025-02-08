@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanika Babruvan Galgunde's portfolio showcasing full-stack development skills, projects, and contact information.">
+    <meta name="keywords" content="Sanika Babruvan Galgunde, Full-Stack Developer, Portfolio, Computer Science Student, Web Development">
+    <meta name="author" content="Sanika Babruvan Galgunde">
+    <title>Sanika Babruvan Galgunde - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <style>
+        /* style.css */
+     /* Google Font */
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    color: #a855f7;
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 20px;
+    color: #ddd;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #a855f7;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #a855f7;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #a855f7;
+    margin-bottom: 20px;
+}
+
+/* Skills & Projects Grid */
+.skills-grid, .projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-grid span, .project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-grid span:hover, .project:hover {
+    background: #a855f7;
+    transform: scale(1.1);
+}
+
+/* Projects & Certificates */
+.project, .certificate {
+    width: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project h3, .certificate h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #a855f7;
+}
+
+.project p, .certificate p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.project:hover, .certificate:hover {
+    background: #a855f7;
+    transform: scale(1.1);
+}
+
+/* Certificates Section */
+#certificate {
+    padding: 50px 0;
+}
+
+.certificate-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.certificate a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a855f7;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.certificate a:hover {
+    color: #fff;
+}
+
+/* Contact Section */
+.section a {
+    color: #a855f7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .skills-grid span, .project, .certificate {
+        width: 180px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sanika Babruvan Galgunde</h1>
+            <p>Full-Stack Developer | Computer Science Student</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p><pre>I’m Sanika Babruvan Galgunde, a passionate full-stack developer currently pursuing a Diploma in Computer Science at SVERI. 
+                    I love building web and mobile applications that are fast, user-friendly, and efficient.
+
+                    My Expertise:<pre>
+                    ✅ Frontend Development – Creating responsive and stylish interfaces with HTML, CSS, JavaScript
+                    ✅ Backend Development – Building secure APIs using Node.js, Express.js, PHP
+                    ✅ Database Management – Handling data efficiently with SQL, MongoDB, Firebase
+                    ✅ Android Development – Developing Android apps with Java and XML.</pre></p>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span>C, C++, Java, Advanced Java, Python, PHP</span>
+                    <span>Android (Java, XML)</span>
+                    <span>HTML, CSS, JavaScript</span>
+                    <span>Node.js, Express.js</span>
+                    <span>MySQL, MongoDB, Firebase</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project">
+                        <h3>Hostel Online Leave Form App</h3>
+                        <p>Android app for managing student leave requests with Firebase integration.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Cloth Store Website</h3>
+                        <p>Fully functional e-commerce platform with a billing system and product tracking.</p>
+                    </div>
+                    <div class="project">
+                        <h3>School Website</h3>
+                        <p>A website with all functionality of the school and their features and facilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certificate" class="section">
+            <div class="container">
+                <h2>Certificates</h2>
+                <div class="certificate-grid">
+                    <div class="certificate">
+                        <h3>SQL Certificate</h3>
+                       <p> <a href="https://www.hackerrank.com/certificates/iframe/0f0dc86e02dd">SQL Basics</a></p>
+                    </div>
+                    <div class="certificate">
+                        <h3>HTML Certificate</h3>
+                        <a href="https://olympus.mygreatlearning.com/courses/47911/certificate">HTML</a>
+                    </div>
+                    <div class="certificate">
+                        <h3>CSS Certificate</h3>
+                        <a href="https://www.sololearn.com/en/certificates/CC-M65WNUK7">CSS</a>
+                    </div>
+                    <div class="certificate">
+                        <h3>JavaScript Certificate</h3>
+                        <a href="https://olympus.mygreatlearning.com/courses/38643/certificate">JavaScript</a>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:sbgalgunde@gmail.com">sbgalgunde@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/gsanika" target="_blank">gsanika</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/sanika-galgunde-728a2034b/" target="_blank">sanika-galgunde</a></p>
+                <p>X (Twitter): <a href="https://x.com/SGalgunde95377" target="_blank">@SGalgunde95377</a></p>
+                <p>Replit: <a href="https://replit.com/@galgundesanika" target="_blank">@galgundesanika</a></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sanika Babruvan Galgunde. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
