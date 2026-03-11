@@ -127,6 +127,9 @@ section{padding:70px 64px;position:relative;z-index:1;}
 .p-tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);padding:4px 11px;transition:all .3s;}
 .p-card:hover .p-tag{border-color:rgba(232,131,106,.3);color:var(--rose);}
 
+/* make linked project cards clickable */
+.p-card-link{display:block;text-decoration:none;color:inherit;cursor:pointer;}
+
 /* CERTIFICATES */
 #certificates{background:var(--bg);}
 .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
@@ -375,6 +378,7 @@ footer p{font-size:12px;color:var(--dim);}
   <div class="sec-kicker">03 — Work</div>
   <h2 class="sec-title reveal">Built &amp; <em>Shipped</em></h2>
   <div class="proj-grid">
+    <!-- existing static projects (no links) -->
     <div class="p-card reveal">
       <div class="p-num">01</div>
       <div class="p-name">Hostel Leave Management System</div>
@@ -417,6 +421,36 @@ footer p{font-size:12px;color:var(--dim);}
         <span class="p-tag">Dashboard Design</span>
       </div>
     </div>
+
+    <!-- Sentiment Analysis (clickable) -->
+    <a href="https://sentiment-analysis-gs.streamlit.app/" target="_blank" class="p-card-link">
+      <div class="p-card reveal">
+        <div class="p-num">05</div>
+        <div class="p-name">Sentiment Analysis App</div>
+        <div class="p-desc">Real-time sentiment analysis of text using NLP and Streamlit. Classifies emotions as positive, negative, or neutral.</div>
+        <div class="p-stack">
+          <span class="p-tag">Python</span>
+          <span class="p-tag">Streamlit</span>
+          <span class="p-tag">NLP</span>
+          <span class="p-tag">Transformers</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- AI Fitness Trainer (clickable) -->
+    <a href="https://ai-fitness-trainee-aoiwhzwihfso3yvf8abwzs.streamlit.app/" target="_blank" class="p-card-link">
+      <div class="p-card reveal">
+        <div class="p-num">06</div>
+        <div class="p-name">AI Fitness Trainer</div>
+        <div class="p-desc">AI-powered fitness trainer that tracks exercise repetitions and provides real-time feedback using computer vision.</div>
+        <div class="p-stack">
+          <span class="p-tag">Python</span>
+          <span class="p-tag">Streamlit</span>
+          <span class="p-tag">OpenCV</span>
+          <span class="p-tag">MediaPipe</span>
+        </div>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -657,6 +691,3 @@ if(contactForm){
 </script>
 </body>
 </html>
-
-
-
